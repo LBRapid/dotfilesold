@@ -1,0 +1,67 @@
+### ALIASES
+alias g="grep"
+alias ak="ack -il"
+alias akl="ack -i"
+alias h="history"
+alias ll="ls -laFh"
+alias \?="h | g $1"
+alias k='clear'
+alias my='mysql -u root'
+alias .a="$EDITOR ~/.aliases && source ~/.aliases && rvm reload"
+alias .e="$EDITOR ~/.env && source ~/.env"
+alias reload="source ~/.aliases && source ~/.env"
+alias push="rake && git push"
+alias lip="lorem $* | pbcopy"
+alias vi='vim'
+alias t='todo.sh -d /Users/janetsdyer/todo.cfg'
+alias rmf='rm -rf'
+alias lsa='ls -a'
+
+# Editor
+alias e=$EDITOR
+
+# Git
+alias ga='git add'
+alias gaa='git add .'
+alias gb='git branch'
+alias gap='git add --patch'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gs='git status'
+alias gpp='git pp'
+alias gci='git pull --rebase && rake && git push'
+alias pull='git pull --rebase'
+alias wtf='git-wtf'
+alias glg='git log'
+alias df='git difftool'
+alias kdf='git difftool -y -t Kaleidoscope'
+alias gln='git log -n'
+alias ks='ksdiff'
+alias gitbox='open -a Gitbox'
+function gg() {
+  git commit -v -a -m "$*"
+}
+
+# Rails
+alias r='rails'
+alias ss='script/server'
+alias rs='rails server'
+alias sc='script/console'
+alias rc='rails console'
+alias sg='script/generate'
+alias rg='rails generate'
+alias rr='touch tmp/restart.txt'
+alias rn='rails new'
+alias tl='tail -f'
+alias migrate='rake db:migrate && rake db:test:prepare'
+alias bx='bundle exec'
+
+# Thor
+alias th='thor'
+
+# Cleanup
+alias rmorig="find . -name '*.orig' | xargs rm"
+
+# nginx
+alias ngstart="sudo /usr/local/nginx/sbin/nginx"
