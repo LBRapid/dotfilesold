@@ -1,4 +1,4 @@
-colorscheme clouds-midnight
+colorscheme ir_black
 
 if has('gui_running')
   set guifont=Inconsolata:h13

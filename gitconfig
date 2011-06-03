@@ -42,8 +42,8 @@
 [help]
   autocorrect = 1
 [core]
-  editor = mate -w
-  quotepath = false
+  editor = mvim -f
+	quotepath = false
   autocrif = input
   safecrif = true
   excludesfile = /Users/johnd/.gitignore_global
