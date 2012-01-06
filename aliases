@@ -16,6 +16,7 @@ alias t='todo.sh -d /Users/janetsdyer/todo.cfg'
 alias rmf='rm -rf'
 alias lsa='ls -a'
 alias rhino='java org.mozilla.javascript.tools.shell.Main'
+alias mvim='mvim .'
 
 # Editor
 alias e=$EDITOR
