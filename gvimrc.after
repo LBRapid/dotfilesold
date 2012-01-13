@@ -1,4 +1,4 @@
-colorscheme ir_black
+colorscheme molokai
 
 if has('gui_running')
   set guifont=Inconsolata:h13
