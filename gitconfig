@@ -20,7 +20,7 @@
   deploy = !git push && cap deploy
   wtf = !git-wtf
 [color]
-  ui = auto
+	ui = always
 [color "diff"]
     meta = blue bold
     frag = magenta bold
