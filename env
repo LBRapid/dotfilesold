@@ -4,7 +4,7 @@ export MY_GITHUB_LOGIN='lbrapid'
 export MY_ORG='Rails Dog LLC'
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/source/depot_tools
-export EDITOR=mvim
+export EDITOR='subl -w'
 export PAGER=most
 export CLICOLOR=1
 
