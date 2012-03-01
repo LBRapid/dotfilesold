@@ -1,3 +1,4 @@
+# load outside files
 if [ -f ~/.env ]; then
   . ~/.env
 fi
@@ -6,9 +7,7 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
-for file in $(ls ~/.bash); do
-  . ~/.bash/$file
+for file in $(ls ~/.zsh); do
+  . ~/.zsh/$file
 done
-
-source ~/.local/bin/bashmarks.sh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
