@@ -62,6 +62,7 @@ alias migrate='rake db:migrate && rake db:test:prepare'
 alias bx='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
+alias sp='rspec spec'
 
 # Thor
 alias th='thor'
