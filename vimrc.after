@@ -126,4 +126,4 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 " Force .m files to use obj-c syntax
-au BufNewFile,BufRead *.m setfiletype objc
+au BufNewFile,BufRead *.m setfiletype=objc
