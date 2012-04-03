@@ -8,6 +8,7 @@ export EDITOR='mvim'
 export PAGER=most
 export CLICOLOR=1
 export NODE_PATH='/usr/local/lib/node_modules'
+export LESS='-i-P%f (%i/%m) Line %lt/%L'
 
 export APACHE='/usr/sbin/httpd'
 
