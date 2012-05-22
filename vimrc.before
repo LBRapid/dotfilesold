@@ -1,1 +1,2 @@
 call janus#disable_plugin('ctrlp')
+call janus#disable_plugin('nerdtree')
