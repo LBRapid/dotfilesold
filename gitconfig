@@ -19,6 +19,7 @@
   lg = log --decorate --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   deploy = !git push && cap deploy
   wtf = !git-wtf
+	ctags = !.git/hooks/ctags
 [color]
 	ui = always
 [color "diff"]
@@ -61,3 +62,5 @@
     tool = "filemerge"
 [github]
 	user = LBRapid
+[init]
+	templatedir = ~/.git_template
