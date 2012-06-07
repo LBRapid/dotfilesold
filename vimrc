@@ -70,6 +70,7 @@ set listchars=tab:>-,trail:·
 nmap <silent> <leader>s :set nolist!<CR>
 
 au BufNewFile,BufRead *.md set filetype=mkd
+au BufRead,BufNewFile *.scss set filetype=scss
 
 " NerdTREE Single Click to Open File
 let g:NERDTreeMouseMode=3
