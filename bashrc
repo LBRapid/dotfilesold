@@ -9,6 +9,3 @@ fi
 for file in $(ls ~/.bash); do
   . ~/.bash/$file
 done
-
-source ~/.local/bin/bashmarks.sh
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

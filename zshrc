@@ -29,7 +29,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler pow rvm)
+plugins=(bundler pow rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,6 +41,9 @@ fi
 if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 #for file in $(ls ~/.zsh); do
   #. ~/.zsh/$file
