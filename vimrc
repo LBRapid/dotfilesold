@@ -50,6 +50,8 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 
 set tags=./tags,tags
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 "This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
@@ -72,8 +74,8 @@ nmap <silent> <leader>s :set nolist!<CR>
 au BufNewFile,BufRead *.md set filetype=mkd
 au BufRead,BufNewFile *.scss set filetype=scss
 
-" NerdTREE Single Click to Open File
-let g:NERDTreeMouseMode=3
+" Copy gist link to clipboard
+let g:gist_clip_command = 'pbcopy'
 
 " -----------------------------------------------------------
 "  TIDY UP WHITESPACE
