@@ -42,6 +42,15 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
+getdef(){
+    if [[ $# -ge 2 ]] then
+        echo "getdef: too many arguments" >&2
+        return 1
+    else
+        curl "dict://dict.org/d:$1"
+    fi
+}
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 

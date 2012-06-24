@@ -1,6 +1,6 @@
 [user]
-  email = lbrapid@gmail.com
-  name = John Dyer
+	email = lbrapid@gmail.com
+	name = John Dyer
 [alias]
   ap = add --patch
   up = pull
