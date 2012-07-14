@@ -166,5 +166,5 @@ nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 
 " NerdCommenter mapping
-map <D-/> <plug>NERDCommenterToggle<CR>
-imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+map <d-/> <plug>NERDCommenterToggle<CR>
+imap <d-/> <Esc><plug>NERDCommenterToggle<CR>i
