@@ -168,3 +168,6 @@ nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 " NerdCommenter mapping
 map <d-/> <plug>NERDCommenterToggle<CR>
 imap <d-/> <Esc><plug>NERDCommenterToggle<CR>i
+
+" Run RSpec for the current file
+map ,t :w<CR>:!./script/test %:p<CR>
