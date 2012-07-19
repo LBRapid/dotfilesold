@@ -42,7 +42,7 @@
 [help]
   autocorrect = 1
 [core]
-  editor = mvim -f
+  editor = vi -f
 	quotepath = false
   autocrif = input
   safecrif = true
@@ -55,7 +55,6 @@
   tool = Kaleidoscope
 [branch]
   autosetuprebase = always
-
 [merge]
     summary = true
     tool = "filemerge"
