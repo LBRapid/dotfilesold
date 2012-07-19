@@ -3,19 +3,15 @@ alias ak="ack -il"
 alias akl="ack -i"
 alias h="history"
 alias ll="ls -laFh"
-alias \?="h | g $1"
 alias k='clear'
 alias my='mysql -u root'
 alias .a="$EDITOR ~/.aliases && source ~/.aliases && rvm reload"
 alias .e="$EDITOR ~/.env && source ~/.env"
 alias reload="source ~/.aliases && source ~/.env"
-alias push="rake && git push"
 alias lip="lorem $* | pbcopy"
 alias vi='vim'
-alias t='todo.sh -d /Users/janetsdyer/todo.cfg'
 alias rmf='rm -rf'
 alias lsa='ls -a'
-alias rhino='java org.mozilla.javascript.tools.shell.Main'
 
 # Editor
 alias e=$EDITOR
@@ -50,11 +46,8 @@ function gg() {
 
 # Rails
 alias r='rails'
-alias ss='script/server'
 alias rs='rails server'
-alias sc='script/console'
 alias rc='rails console'
-alias sg='script/generate'
 alias rg='rails generate'
 alias rr='touch tmp/restart.txt'
 alias rn='rails new'
@@ -67,9 +60,3 @@ alias sp='rspec spec'
 
 # Thor
 alias th='thor'
-
-# Cleanup
-alias rmorig="find . -name '*.orig' | xargs rm"
-
-# nginx
-alias ngstart="sudo /usr/local/nginx/sbin/nginx"
