@@ -78,6 +78,9 @@ au BufRead,BufNewFile *.scss set filetype=scss
 " Copy gist link to clipboard
 let g:gist_clip_command = 'pbcopy'
 
+" Indent rules for python files
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
 " -----------------------------------------------------------
 "  TIDY UP WHITESPACE
 " -----------------------------------------------------------
@@ -99,7 +102,7 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 " Run StripTrailingWhitespaces on save
 if has("autocmd")
-  autocmd BufWritePre *.rb,*.js,*.html,*.css :call <SID>StripTrailingWhitespaces()
+  autocmd BufWritePre *.rb,*.js,*.html,*.css,*.py :call <SID>StripTrailingWhitespaces()
 endif
 
 " -----------------------------------------------------------
@@ -141,33 +144,6 @@ nnoremap <C-l> <C-w>l
 
 " Clear search highlights
 noremap <silent><Leader><space> :nohls<CR>
-
-" Swap files in VIM Splits while retaining split sizes and positions
-function! MarkWindowSwap()
-  let g:markedWinNum = winnr()
-endfunction
-
-function! DoWindowSwap()
-  "Mark destination
-  let curNum = winnr()
-  let curBuf = bufnr( "%" )
-  exe g:markedWinNum . "wincmd w"
-  "Switch to source and shuffle dest->source
-  let markedBuf = bufnr( "%" )
-  "Hide and open so that we aren't prompted and keep history
-  exe 'hide buf' curBuf
-  "Switch to dest and shuffle source->dest
-  exe curNum . "wincmd w"
-  "Hide and open so that we aren't prompted and keep history
-  exe 'hide buf' markedBuf 
-endfunction
-
-nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
-nmap <silent> <leader>pw :call DoWindowSwap()<CR>
-
-" NerdCommenter mapping
-map <d-/> <plug>NERDCommenterToggle<CR>
-imap <d-/> <Esc><plug>NERDCommenterToggle<CR>i
 
 " Run RSpec for the current file
 map ,t :w<CR>:!./script/test %:p<CR>
