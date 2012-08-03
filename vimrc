@@ -26,7 +26,6 @@ set incsearch                     " Highlight matches as you type.
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
 
-set textwidth=80                  " Hard linebreak at 80 characters width
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 set title                         " Set the terminal's title
@@ -144,6 +143,10 @@ nnoremap <C-l> <C-w>l
 
 " Clear search highlights
 noremap <silent><Leader><space> :nohls<CR>
+
+" Commentary mappings
+map <d-k> \\\
+imap <d-k> \\\
 
 " Run RSpec for the current file
 map ,t :w<CR>:!./script/test %:p<CR>
