@@ -12,7 +12,7 @@ alias lip="lorem $* | pbcopy"
 alias vi='vim'
 alias rmf='rm -rf'
 alias lsa='ls -a'
-alias nyan='nc -v miku.acm.uiuc.edu 23 TERM=fallback telnet'
+alias nyan='nc -v miku.acm.uiuc.edu 23 TERM=fallback'
 
 # Editor
 alias e=$EDITOR
