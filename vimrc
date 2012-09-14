@@ -51,6 +51,7 @@ set tags=./tags,tags
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore = 'tmp'
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
