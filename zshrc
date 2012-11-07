@@ -57,3 +57,6 @@ eval "$(rbenv init -)"
 #for file in $(ls ~/.zsh); do
   #. ~/.zsh/$file
 #done
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
