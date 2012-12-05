@@ -142,12 +142,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Clear search highlights
-noremap <silent><Leader><space> :nohls<CR>
-
 " Commentary mappings
 map <d-k> \\\
 imap <d-k> \\\
+
+" Make the dot key functional in visual mode
+:vnoremap . :normal .<CR>
 
 " Run RSpec for the current file
 map ,t :w<CR>:!./script/test %:p<CR>
