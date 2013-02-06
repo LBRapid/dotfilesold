@@ -21,7 +21,7 @@ set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains a capital letter.
 
 set incsearch                     " Highlight matches as you type.
-"set hlsearch                      " Highlight matches.
+set hlsearch                      " Highlight matches.
 
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
@@ -49,12 +49,14 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 
 set tags=./tags,tags
 
+set timeoutlen=1000 ttimeoutlen=0
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'tmp'
 
-"This unsets the "last search pattern" register by hitting return
-nnoremap <CR> :noh<CR><CR>
+"This unsets the "last search pattern" register by hitting ctrl-space
+nnoremap <C-Space> :noh<CR><CR>
 
 " Ctrl-S to save
 map <C-s> :w<cr>
