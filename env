@@ -3,7 +3,7 @@ export MY_EMAIL='john@spreecommerce.com'
 export MY_GITHUB_LOGIN='lbrapid'
 export MY_ORG='Spree Commerce'
 
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin:
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
 export EDITOR='mvim'
 export PAGER=most
 export CLICOLOR=1
@@ -17,3 +17,9 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
 export RUBY_HEAP_MIN_SLOTS=40000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+
+export EC2_HOME=~/.ec2
+export PATH=$PATH:$EC2_HOME/bin
+export EC2_PRIVATE_KEY=pk-6JM2A4DFIJS4EWO67R7IPC2TO5E47R6B.pem
+export EC2_CERT=cert-6JM2A4DFIJS4EWO67R7IPC2TO5E47R6B.pem
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/

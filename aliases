@@ -39,6 +39,7 @@ alias grh='git reset --hard'
 alias df='git difftool'
 alias kdf='git difftool -y -t Kaleidoscope'
 alias gln='git log -n'
+alias gst='git stash'
 alias ks='ksdiff'
 alias gitbox='open -a Gitbox'
 function gg() {
