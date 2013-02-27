@@ -55,6 +55,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'tmp'
 
+" Map clipboard paste to ,v
+nmap ,v "*p
+
 "This unsets the "last search pattern" register by hitting ctrl-space
 nnoremap <C-Space> :noh<CR><CR>
 

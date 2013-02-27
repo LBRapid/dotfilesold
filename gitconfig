@@ -62,3 +62,5 @@
 	user = LBRapid
 [init]
 	templatedir = ~/.git_template
+[push]
+	default = upstream
