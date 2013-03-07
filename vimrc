@@ -4,6 +4,8 @@ set exrc
 
 set nocompatible                  " Must come first because it changes other options.
 
+let mapleader = " "
+
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
@@ -33,8 +35,8 @@ set title                         " Set the terminal's title
 set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
+set noswapfile                    " No swap files
 set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp      " Keep swap files in one location
 
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
@@ -147,6 +149,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" -----------------------------------------------------------
+"  MISC SETTINGS
+" -----------------------------------------------------------
+"
+
 " Commentary mappings
 map <d-k> \\\
 imap <d-k> \\\
@@ -156,3 +163,6 @@ imap <d-k> \\\
 
 " Run RSpec for the current file
 map ,t :w<CR>:!./script/test %:p<CR>
+
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
