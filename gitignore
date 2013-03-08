@@ -5,3 +5,7 @@ mkmf.log
 *.orig
 .rvmrc
 .tmtags
+
+# Vim bundle
+vim/bundle/*
+!vim/bundle/vundle
