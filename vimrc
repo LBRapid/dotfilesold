@@ -57,6 +57,37 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'tmp'
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+" My Bundles here:
+"
+" original repos on github
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-commentary'
+Bundle 'pangloss/vim-javascript'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/greplace.vim'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'xenoterracide/html.vim'
+Bundle 'mattn/gist-vim'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/closetag.vim'
+Bundle 'mattn/webapi-vim'
+
 " Map clipboard paste to ,v
 nmap ,v "*p
 
@@ -166,3 +197,9 @@ map ,t :w<CR>:!./script/test %:p<CR>
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
+
+" Use Ag (https://github.com/ggreer/the_silver_searcher) instead of Grep when
+" available
+if executable("ag")
+  set grepprg=ag\ --noheading\ --nogroup\ --nocolor
+endif

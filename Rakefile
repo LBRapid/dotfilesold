@@ -33,6 +33,16 @@ task :clean do
   end
 end
 
+desc "Symlink vim bundle folder"
+task :vim_symlink do
+  link = File.expand_path("~/.vim/bundle")
+  if !File.exists?(link)
+    run %Q{ln -s "#{here("vim/bundle")}" "#{link}"}
+  else
+    puts "Bundle folder already exists at ~/.vim/bundle!"
+  end
+end
+
 desc "Removes all existing symlinks, then re-symlinks my dotfiles"
 task :reset do
   dotfiles.each do |dotfile|
