@@ -2,3 +2,5 @@
 vim/.netrwhist
 bash/s3
 bash/github
+vim/bundle/*
+!vim/bundle/vundle
