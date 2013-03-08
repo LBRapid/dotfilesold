@@ -1,4 +1,3 @@
-call pathogen#infect()
 set t_Co=256
 set exrc
 
