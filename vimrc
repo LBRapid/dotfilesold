@@ -86,6 +86,7 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/closetag.vim'
 Bundle 'mattn/webapi-vim'
+Bundle 'ervandew/supertab'
 
 " Map clipboard paste to ,v
 nmap ,v "*p
