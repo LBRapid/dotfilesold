@@ -11,7 +11,16 @@ def run(cmd)
   system cmd
 end
 
-task :default => :dotfiles
+task :default => :install
+
+desc "Install dotfiles"
+task :install do
+  Rake::Task["dotfiles"].invoke
+  Rake::Task["vim_symlink"].invoke
+  Rake::Task["zsh_symlink"].invoke
+
+  puts "Installation complete!"
+end
 
 desc "Symlinks all my dotfiles"
 task :dotfiles do
@@ -43,20 +52,12 @@ task :vim_symlink do
   end
 end
 
-desc "Removes all existing symlinks, then re-symlinks my dotfiles"
-task :reset do
-  dotfiles.each do |dotfile|
-    link = File.expand_path("~/.#{dotfile}")
-    if File.symlink?(link)
-      run %Q{rm "#{link}"}
-    end
+desc "Symlink oh-my-zsh folder"
+task :zsh_symlink do
+  link = File.expand_path("~/.oh-my-zsh")
+  if !File.exists?(link)
+    run %Q{ln -s "#{here("oh-my-zsh")}" "#{link}"}
+  else
+    puts "oh-my-zsh folder already exists at ~/.oh-my-zsh!"
   end
-  puts "Existing symlinks have been removed."
-  dotfiles.each do |dotfile|
-    link = File.expand_path("~/.#{dotfile}")
-    unless File.exists?(link)
-      run %Q{ln -s "#{here(dotfile)}" "#{link}"}
-    end
-  end
-  puts "Dotfiles have been symlinked again."
 end
