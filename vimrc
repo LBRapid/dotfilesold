@@ -193,7 +193,7 @@ imap <d-k> \\\
 :vnoremap . :normal .<CR>
 
 " Run RSpec for the current file
-map ,t :w<CR>:!./script/test %:p<CR>
+map <leader>s :w\|:!bundle exec rspec --color %<cr>
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
