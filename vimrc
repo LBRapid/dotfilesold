@@ -65,7 +65,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
@@ -84,9 +83,9 @@ Bundle 'xenoterracide/html.vim'
 Bundle 'mattn/gist-vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'godlygeek/tabular'
-Bundle 'vim-scripts/closetag.vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'ervandew/supertab'
+Bundle 'raimondi/delimitmate'
 
 " Map clipboard paste to ,v
 nmap ,v "*p
