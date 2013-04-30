@@ -47,6 +47,7 @@
   autocrif = input
   safecrif = true
   excludesfile = /Users/johnd/.gitignore_global
+	pager = less -r
 [difftool "Kaleidoscope"]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
