@@ -4,3 +4,4 @@ bash/s3
 bash/github
 vim/bundle/*
 !vim/bundle/vundle
+.DS_STORE
