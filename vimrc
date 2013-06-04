@@ -6,7 +6,7 @@ set nocompatible                  " Must come first because it changes other opt
 let mapleader = " "
 
 syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
+filetype off
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -66,6 +66,7 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-rbenv'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
@@ -73,6 +74,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tsaleh/vim-matchit'
@@ -85,35 +87,18 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'godlygeek/tabular'
 Bundle 'mattn/webapi-vim'
 Bundle 'ervandew/supertab'
-Bundle 'raimondi/delimitmate'
+Bundle 't9md/vim-ruby-xmpfilter'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
-" Map clipboard paste to ,v
-nmap ,v "*p
-
-"This unsets the "last search pattern" register by hitting ctrl-space
-nnoremap <C-Space> :noh<CR><CR>
-
-" Ctrl-S to save
-map <C-s> :w<cr>
-imap <C-s> <Esc>:w<cr>i
-
-" Delete blank lines is Ctrl-L
-map <C-L> :g/^$/d
-imap <C-L> :g/^$/d
+filetype plugin indent on         " Turn on file type detection.
 
 " Visual Options
 color molokai
 colorscheme molokai
 
-" Show trailing spaces
-set listchars=tab:>-,trail:·
-nmap <silent> <leader>s :set nolist!<CR>
-
 au BufNewFile,BufRead *.md set filetype=mkd
 au BufRead,BufNewFile *.scss set filetype=scss
-
-" Copy gist link to clipboard
-let g:gist_clip_command = 'pbcopy'
 
 " Indent rules for python files
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
@@ -148,15 +133,7 @@ endif
 "
 set guitablabel=%N\ %t\ %m
 
-" C-TAB and C-SHIFT-TAB cycle tabs forward and backward
-nmap <c-tab> :tabnext<cr>
-imap <c-tab> <c-o>:tabnext<cr>
-vmap <c-tab> <c-o>:tabnext<cr>
-nmap <c-s-tab> :tabprevious<cr>
-imap <c-s-tab> <c-o>:tabprevious<cr>
-vmap <c-s-tab> <c-o>:tabprevious<cr>
-
-" C-# switches to tab
+" CMD-# switches to tab
 nmap <d-1> 1gt
 nmap <d-2> 2gt
 nmap <d-3> 3gt
@@ -166,6 +143,20 @@ nmap <d-6> 6gt
 nmap <d-7> 7gt
 nmap <d-8> 8gt
 nmap <d-9> 9gt
+
+" changing tabs with number keys
+map <leader>1 1gt
+map <leader>2 2gt
+map <leader>3 3gt
+map <leader>4 4gt
+map <leader>5 5gt
+map <leader>6 6gt
+map <leader>7 7gt
+map <leader>8 8gt
+map <leader>9 9gt
+map <leader>[ gT
+map <leader>] gt
+map <leader>0 :tablast<CR>
 
 " Custom Indent Mappings
 nmap <d-[> <<
@@ -202,3 +193,30 @@ nnoremap <leader><leader> <c-^>
 if executable("ag")
   set grepprg=ag\ --noheading\ --nogroup\ --nocolor
 endif
+
+" xmpfilter Gvim
+nmap <buffer> <leader>r <Plug>(xmpfilter-run)
+xmap <buffer> <leader>r <Plug>(xmpfilter-run)
+
+nmap <buffer> <leader>m <Plug>(xmpfilter-mark)
+xmap <buffer> <leader>m <Plug>(xmpfilter-mark)
+
+" Map clipboard paste to ,v
+nmap ,v "*p
+
+"This unsets the "last search pattern" register by hitting ctrl-space
+nnoremap <c-Space> :noh<CR><CR>
+
+" ,s to Save
+nnoremap ,s :w<cr>
+
+" Delete blank lines is Ctrl-L
+map <C-L> :g/^$/d
+imap <C-L> :g/^$/d
+
+" Show trailing spaces
+set listchars=tab:>-,trail:·
+nmap <silent> <leader>s :set nolist!<CR>
+
+" Copy gist link to clipboard
+let g:gist_clip_command = 'pbcopy'
