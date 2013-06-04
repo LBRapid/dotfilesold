@@ -204,15 +204,8 @@ xmap <buffer> <leader>m <Plug>(xmpfilter-mark)
 " Map clipboard paste to ,v
 nmap ,v "*p
 
-"This unsets the "last search pattern" register by hitting ctrl-space
-nnoremap <c-Space> :noh<CR><CR>
-
 " ,s to Save
 nnoremap ,s :w<cr>
-
-" Delete blank lines is Ctrl-L
-map <C-L> :g/^$/d
-imap <C-L> :g/^$/d
 
 " Show trailing spaces
 set listchars=tab:>-,trail:·
