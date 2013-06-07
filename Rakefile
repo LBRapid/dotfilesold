@@ -32,3 +32,17 @@ task :clean do
     end
   end
 end
+
+desc "Init and update submodules."
+task :submodules do
+  puts "======================================================"
+  puts "Downloading required submodules...please wait"
+  puts "======================================================"
+
+  run %{
+    git submodule update --init --recursive
+    git submodule foreach 'git fetch origin; git checkout master; git reset --hard origin/master; git submodule update --recursive; git clean -df'
+    git clean -df
+  }
+  puts
+end
