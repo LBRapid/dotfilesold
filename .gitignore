@@ -3,5 +3,6 @@ vim/.netrwhist
 bash/s3
 bash/github
 vim/bundle/*
+vim/backups
 !vim/bundle/vundle
 .DS_STORE
