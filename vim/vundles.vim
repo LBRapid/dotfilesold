@@ -44,7 +44,7 @@ Bundle 'ervandew/supertab'
 Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
-
+Bundle 'terryma/vim-multiple-cursors'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
