@@ -33,6 +33,10 @@ nmap <d-[> <<
 nmap <d-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+nmap <C-[> <<
+nmap <C-]> >>
+vmap <C-[> <gv
+vmap <C-]> >gv
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h
@@ -46,8 +50,8 @@ nnoremap <C-l> <C-w>l
 "
 
 " Commentary mappings
-map <d-k> \\\
-imap <d-k> \\\
+map <leader>k \\\
+imap <leader>k \\\
 
 " Make the dot key functional in visual mode
 :vnoremap . :normal .<CR>
