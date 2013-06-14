@@ -30,7 +30,7 @@ CASE_SENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler pow rbenv)
+plugins=(bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,21 +43,5 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
-getdef(){
-    if [[ $# -ge 2 ]] then
-        echo "getdef: too many arguments" >&2
-        return 1
-    else
-        curl "dict://dict.org/d:$1"
-    fi
-}
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-#for file in $(ls ~/.zsh); do
-  #. ~/.zsh/$file
-#done
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"

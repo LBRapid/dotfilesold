@@ -33,10 +33,8 @@ nmap <d-[> <<
 nmap <d-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
-nmap <C-[> <<
-nmap <C-]> >>
-vmap <C-[> <gv
-vmap <C-]> >gv
+nnoremap <C-[> <<
+nnoremap <C-]> >>
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h
