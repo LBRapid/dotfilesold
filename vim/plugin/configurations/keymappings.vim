@@ -48,11 +48,10 @@ nnoremap <C-l> <C-w>l
 "
 
 " Commentary mappings
-map <leader>k \\\
-imap <leader>k \\\
+nnoremap <leader>k \\\
 
 " Make the dot key functional in visual mode
-:vnoremap . :normal .<CR>
+:vnoremap . :norm.<CR>
 
 " Run RSpec for the current file
 map <leader>s :w\|:!bundle exec rspec --color %<cr>
