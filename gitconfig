@@ -67,3 +67,5 @@
 	default = upstream
 [credential]
 	helper = osxkeychain
+[mergetool]
+	keepBackup = true
