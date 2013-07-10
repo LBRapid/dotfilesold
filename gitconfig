@@ -69,3 +69,5 @@
 	helper = osxkeychain
 [mergetool]
 	keepBackup = true
+[web]
+	browser = google-chrome
