@@ -31,10 +31,8 @@ map <leader>0 :tablast<CR>
 " Custom Indent Mappings
 nmap <d-[> <<
 nmap <d-]> >>
-vmap <D-[> <gv
-vmap <D-]> >gv
-nnoremap <C-[> <<
-nnoremap <C-]> >>
+vmap <d-[> <gv
+vmap <d-]> >gv
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h
@@ -71,3 +69,7 @@ nmap ,v "*p
 
 " ,s to Save
 nnoremap ,s :w<cr>
+
+" haste paste
+nnoremap <silent> <leader>h :%w ! haste \| pbcopy<CR>
+vmap <silent> <leader>h :w ! haste \| pbcopy<CR>
