@@ -63,3 +63,5 @@ alias sp='rspec spec'
 
 # Thor
 alias th='thor'
+
+alias serveit='ruby -run -e httpd -- -p 5000 .'
