@@ -40,6 +40,7 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'bling/vim-airline'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'Lokaltog/vim-easymotion'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

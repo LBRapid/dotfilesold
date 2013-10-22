@@ -51,9 +51,6 @@ nnoremap <leader>k \\\
 " Make the dot key functional in visual mode
 :vnoremap . :norm.<CR>
 
-" Switch between the last two files
-nnoremap <leader><leader> <c-^>
-
 " xmpfilter Gvim
 nmap <buffer> <leader>r <Plug>(xmpfilter-run)
 xmap <buffer> <leader>r <Plug>(xmpfilter-run)
