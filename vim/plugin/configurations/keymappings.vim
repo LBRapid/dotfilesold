@@ -40,6 +40,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Use cursor keys to navigate buffers.
+map  <Right> :bnext<CR>
+map  <Left>  :bprev<CR>
+imap <Right> <ESC>:bnext<CR>
+imap <Left>  <ESC>:bprev<CR>
+map  <Del>   :bd<CR>
 " -----------------------------------------------------------
 "  MISC SETTINGS
 " -----------------------------------------------------------
