@@ -1,4 +1,4 @@
-### ALIASES
+### General
 alias ak="ack -il"
 alias akl="ack -i"
 alias h="history"
@@ -23,7 +23,7 @@ alias gaa='git add --all'
 alias gau='git add --update'
 alias gb='git branch'
 alias gap='git add --patch'
-alias gc='git commit'
+alias gc='git commit -v'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gd='git diff'
@@ -36,15 +36,28 @@ alias pull='git pull --rebase'
 alias wtf='git-wtf'
 alias glg='git lg'
 alias glgcon='git log -p -S'
-alias grh='git reset --hard'
+alias grh='git reset HEAD'
+alias grc='git rebase --continue'
+alias grs='git rebase --skip'
+alias gra='git rebase --abort'
+alias sha='git rev-parse HEAD | sed ":a;N;$!ba;s/\n//g" | pbcopy'
+alias cherry='git cherry-pick $1'
 alias df='git difftool'
 alias kdf='git difftool -y -t Kaleidoscope'
 alias gln='git log -n'
 alias gst='git stash'
-alias ks='ksdiff'
 alias gitbox='open -a Gitbox'
-function gg() {
-  git commit -v -a -m "$*"
+alias good='git bisect good'
+alias bad='git bisect bad'
+
+function branch_name() {
+  branch_name="$(git symbolic-ref HEAD 2>/dev/null)"
+  branch_name=${branch_name##refs/heads/}
+  echo $branch_name
+}
+
+function push() {
+  git push origin `branch_name`
 }
 
 # Rails
