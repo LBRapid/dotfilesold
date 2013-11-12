@@ -17,6 +17,8 @@ set title                         " Set the terminal's title.
 set nrformats=alpha               " Decimal arithmetic.
 set clipboard=unnamed             " Use native clipboard.
 set timeoutlen=1000 ttimeoutlen=0
+set tw=80                         " Max line length is 80 columns
+set formatoptions+=w
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.

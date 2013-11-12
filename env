@@ -1,10 +1,9 @@
 export MY_NAME='John Dyer'
-export MY_EMAIL='john@spreecommerce.com'
+export MY_EMAIL='jdyer@spreecommerce.com'
 export MY_GITHUB_LOGIN='lbrapid'
 export MY_ORG='Spree Commerce'
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
-export PATH=$PATH:/Applications/VirtualBox.app/Contents/MacOS/
 export EDITOR='vim'
 export PAGER='less'
 export CLICOLOR=1
@@ -20,4 +19,3 @@ export RUBY_HEAP_MIN_SLOTS=40000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 
 export ENDPOINT_KEY=6a204bd89f3c8348afd5c77c717a097a
-export HUB_JS_URL='http://localhost:5000/hub.min.js'

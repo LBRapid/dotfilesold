@@ -43,6 +43,5 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
-export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
