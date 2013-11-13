@@ -42,6 +42,7 @@ Bundle 'bling/vim-airline'
 Bundle 'thoughtbot/vim-rspec'
 " Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rking/ag.vim'
+Bundle 'scrooloose/syntastic'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
