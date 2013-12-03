@@ -15,7 +15,7 @@ set gcr=a:blinkon0                " Disable cursor blink.
 set autoread                      " Reload files changed outside vim.
 set title                         " Set the terminal's title.
 set nrformats=alpha               " Decimal arithmetic.
-" set clipboard=unnamed             " Use native clipboard.
+set clipboard=unnamed             " Use native clipboard.
 set timeoutlen=1000 ttimeoutlen=0
 set tw=80                         " Max line length is 80 columns
 set formatoptions+=w
