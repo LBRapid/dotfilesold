@@ -32,3 +32,8 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Ruby Related #
+################
+.ruby-version
+.powder

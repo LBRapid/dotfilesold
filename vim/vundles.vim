@@ -44,6 +44,7 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'rking/ag.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'christoomey/vim-tmux-navigator'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
