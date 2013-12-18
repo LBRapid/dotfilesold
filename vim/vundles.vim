@@ -14,7 +14,6 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-rbenv'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
