@@ -42,6 +42,5 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
-# export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+source /usr/local/share/chruby/chruby.sh
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
