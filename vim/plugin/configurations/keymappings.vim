@@ -73,3 +73,6 @@ nnoremap ,s :w<cr>
 " haste paste
 nnoremap <silent> <leader>h :%w ! haste \| pbcopy<CR>
 vmap <silent> <leader>h :w ! haste \| pbcopy<CR>
+
+" Toggle tagbar
+nmap <F8> :TagbarToggle<CR>

@@ -40,11 +40,16 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'bling/vim-airline'
 Bundle 'thoughtbot/vim-rspec'
-" Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rking/ag.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'majutsushi/tagbar'
+" Snipmate related bundles
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on

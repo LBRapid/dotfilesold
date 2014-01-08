@@ -21,6 +21,8 @@ endif
 set timeoutlen=1000 ttimeoutlen=0
 set tw=80                         " Max line length is 80 columns
 set formatoptions+=w
+set ignorecase
+set infercase
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
