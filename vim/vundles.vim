@@ -45,6 +45,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'majutsushi/tagbar'
+Bundle 'goldfeld/vim-seek'
 " Snipmate related bundles
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
