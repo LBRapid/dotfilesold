@@ -8,6 +8,7 @@ export EDITOR='vim'
 export PAGER='less'
 export CLICOLOR=1
 export NODE_PATH='/usr/local/lib/node_modules'
+export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
 export LESS='-i-P%f (%i/%m) Line %lt/%L'
 
 export CFLAGS='-O3'
@@ -19,3 +20,7 @@ export RUBY_GC_HEAP_INIT_SLOTS=40000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 
 export ENDPOINT_KEY=6a204bd89f3c8348afd5c77c717a097a
+
+export HISTSIZE=1000
+export HISTFILE=$HOME/.history
+export SAVEHIST=$HISTSIZE
