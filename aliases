@@ -3,6 +3,7 @@ alias ak="ack -il"
 alias akl="ack -i"
 alias h="history"
 alias ll="ls -laFh"
+alias l='less'
 alias k='clear'
 alias my='mysql -u root'
 alias .a="$EDITOR ~/.aliases && source ~/.aliases"
