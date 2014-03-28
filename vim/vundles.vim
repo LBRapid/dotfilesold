@@ -47,11 +47,7 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'majutsushi/tagbar'
 Bundle 'goldfeld/vim-seek'
-" Snipmate related bundles
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Bundle "mattn/emmet-vim"
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
