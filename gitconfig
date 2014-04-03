@@ -42,7 +42,7 @@
 [help]
   autocorrect = 1
 [core]
-  editor = vi
+	editor = /usr/bin/vim
 	quotepath = false
   autocrif = input
   safecrif = true
