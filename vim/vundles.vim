@@ -48,6 +48,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'majutsushi/tagbar'
 Bundle 'goldfeld/vim-seek'
 Bundle "mattn/emmet-vim"
+Bundle 'mustache/vim-mustache-handlebars'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
