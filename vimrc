@@ -19,7 +19,9 @@ if $TMUX == ''
   set clipboard=unnamed             " Use native clipboard.
 endif
 set timeoutlen=1000 ttimeoutlen=0
-set tw=80                         " Max line length is 80 columns
+set textwidth=79                         " Max line length is 80 columns
+set wrap
+set linebreak
 set formatoptions+=w
 set ignorecase
 set infercase
