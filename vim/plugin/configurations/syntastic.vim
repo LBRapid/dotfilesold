@@ -1,4 +1,4 @@
-let g:syntastic_quiet_warnings = 1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_ruby_checkers = ['rubylint']
 let g:syntastic_javascript_checkers = ['jsl']
 
