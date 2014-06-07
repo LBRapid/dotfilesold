@@ -1,4 +1,4 @@
-set show-author = abbreviated
-set show-rev-graph = yes
-set tab-size = 2
-set author-width = 3
+# set show-author = abbreviated
+# set show-rev-graph = yes
+# set tab-size = 2
+# set author-width = 3
