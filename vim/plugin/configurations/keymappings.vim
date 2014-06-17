@@ -55,7 +55,7 @@ map  <Del>   :bd<CR>
 nnoremap <leader>k \\\
 
 " Make the dot key functional in visual mode
-:vnoremap . :norm.<CR>
+vnoremap . :norm.<CR>
 
 " xmpfilter Gvim
 nmap <buffer> <leader>r <Plug>(xmpfilter-run)
@@ -76,3 +76,6 @@ vmap <silent> <leader>h :w ! haste \| pbcopy<CR>
 
 " Toggle tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" Open current buffer in marked
+nnoremap <leader>md :silent !open -a Marked.app '%:p'<cr>
