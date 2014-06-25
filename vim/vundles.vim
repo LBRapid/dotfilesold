@@ -49,6 +49,7 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'mattn/emmet-vim'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'wellle/targets.vim'
+Bundle 'Shougo/neocomplcache.vim'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
