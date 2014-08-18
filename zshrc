@@ -41,5 +41,6 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
+source /usr/local/share/chruby/chruby.sh
 chruby ruby-2.1.2
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
