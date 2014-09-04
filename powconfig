@@ -1,4 +1,4 @@
 export POW_TIMEOUT=3600
 export POW_DOMAINS=dev,test,ssl
 eval $(rbenv init -)
-export PATH=$(rbenv root)/shims:$(rbenv root)/bin:$PATH
+export PATH="/usr/local/opt/rbenv/shims:/usr/local/opt/rbenv/bin:$PATH"
