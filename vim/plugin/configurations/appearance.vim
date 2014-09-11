@@ -15,4 +15,5 @@ if has("gui_running")
   set transparency=0
   set guioptions=aAce
   set guitablabel=%N\ %t\ %m
+  set noballooneval
 endif
