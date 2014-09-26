@@ -92,7 +92,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'tmp'
 
-au BufNewFile,BufRead *.md set filetype=mkd
+au BufNewFile,BufRead *.md set filetype=markdown
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " Indent rules for python files
@@ -104,3 +104,6 @@ nmap <silent> <leader>s :set nolist!<CR>
 
 " Copy gist link to clipboard
 let g:gist_clip_command = 'pbcopy'
+
+" Enable matchit.vim (comes with vim these days)
+runtime macros/matchit.vim

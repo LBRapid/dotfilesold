@@ -31,7 +31,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-vinegar'
 Bundle 'tpope/vim-fireplace'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/ZoomWin'
@@ -51,6 +50,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'wellle/targets.vim'
 Bundle 'Shougo/neocomplcache.vim'
+Bundle 'elixir-lang/vim-elixir'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
