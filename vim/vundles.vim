@@ -51,6 +51,7 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'wellle/targets.vim'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'mtth/scratch.vim'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
