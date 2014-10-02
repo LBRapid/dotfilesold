@@ -88,10 +88,6 @@ set scrolloff=5                   " Start scrolling when we're 5 lines away from
 set sidescrolloff=15
 set sidescroll=1
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = 'tmp'
-
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufRead,BufNewFile *.scss set filetype=scss
 

@@ -13,7 +13,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'kien/ctrlp.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'xenoterracide/html.vim'
 Bundle 'othree/html5.vim'
@@ -49,9 +48,13 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'mattn/emmet-vim'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'wellle/targets.vim'
-Bundle 'Shougo/neocomplcache.vim'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'mtth/scratch.vim'
+
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/neomru.vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Shougo/unite.vim'
 
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
