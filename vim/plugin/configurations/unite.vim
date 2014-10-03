@@ -12,7 +12,6 @@ call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
       \ ], '\|'))
 
 nnoremap <leader>fr :<C-u>Unite -no-split -buffer-name=mru  -start-insert file_mru<cr>
-nnoremap <leader>o :<C-u>Unite -no-split -buffer-name=outline -start-insert outline<cr>
 nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -quick-match -buffer-name=buffer buffer<cr>
 nnoremap <leader>/ :<C-u>Unite -buffer-name=grep  grep:.<cr>
@@ -38,6 +37,6 @@ function! s:unite_settings()
   " Close unite buffer with ESC
   nmap <buffer> <esc> <plug>(unite_exit)
   imap <buffer> <esc> <plug>(unite_exit)
-  hi PmenuSel   ctermfg=White   ctermbg=Magenta cterm=Bold guifg=White guibg=Magenta gui=Bold
+  hi PmenuSel   ctermfg=White   ctermbg=31 cterm=Bold guifg=White guibg=#0087AF gui=Bold
 endfunction
 autocmd FileType unite call s:unite_settings()
