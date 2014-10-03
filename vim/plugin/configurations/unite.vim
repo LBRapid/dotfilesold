@@ -1,9 +1,15 @@
 let g:unite_source_history_yank_enable = 1
 let g:unite_source_grep_command = "ag"
 let g:unite_prompt = ">>"
-let g:cursor_line_highlight = 'ashen'
+let g:unite_winheight = 10
 
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+
+call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
+      \ 'ignore_pattern', join([
+      \ '\.git/',
+      \ ], '\|'))
 
 nnoremap <leader>fr :<C-u>Unite -no-split -buffer-name=mru  -start-insert file_mru<cr>
 nnoremap <leader>o :<C-u>Unite -no-split -buffer-name=outline -start-insert outline<cr>
@@ -15,6 +21,7 @@ nnoremap <leader>ft :<C-u>Unite file_rec/async -default-action=tabopen -start-in
 nnoremap <leader>fs :<C-u>Unite file_rec/async -default-action=split -start-insert<cr>
 nnoremap <leader>fv :<C-u>Unite file_rec/async -default-action=vsplit -start-insert<cr>
 nnoremap <leader>fl :<C-u>UniteResume<cr>
+nnoremap <C-P> :<C-u>Unite file_rec/async:!  -buffer-name=files  -start-insert<cr>
 
 " Custom mappings for the unite buffer
 autocmd FileType unite call s:unite_settings()
@@ -24,6 +31,11 @@ function! s:unite_settings()
   " Enable navigation with control-j and control-k in insert mode
   imap <buffer> <C-j>   <Plug>(unite_select_next_line)
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
+  " CtrlP style controls
+  imap <silent><buffer><expr> <C-x> unite#do_action('split')
+  imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
+  imap <silent><buffer><expr> <C-t> unite#do_action('tabopen')
+  " Close unite buffer with ESC
   nmap <buffer> <esc> <plug>(unite_exit)
   imap <buffer> <esc> <plug>(unite_exit)
   hi PmenuSel   ctermfg=White   ctermbg=Magenta cterm=Bold guifg=White guibg=Magenta gui=Bold
