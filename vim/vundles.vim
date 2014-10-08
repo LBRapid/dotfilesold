@@ -49,6 +49,7 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'wellle/targets.vim'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'mtth/scratch.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'

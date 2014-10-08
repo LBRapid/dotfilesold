@@ -33,6 +33,7 @@ set hidden
 
 " Turn on syntax highlighting.
 syntax on
+syntax enable
 
 " Change leader to a space because the backslash is too far away
 " That means all \x commands turn into <space>x
