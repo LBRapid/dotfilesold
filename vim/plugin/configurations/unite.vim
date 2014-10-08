@@ -31,9 +31,9 @@ function! s:unite_settings()
   imap <buffer> <C-j>   <Plug>(unite_select_next_line)
   imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
   " CtrlP style controls
-  imap <silent><buffer><expr> <C-x> unite#do_action('split')
-  imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
-  imap <silent><buffer><expr> <C-t> unite#do_action('tabopen')
+  map <silent><buffer><expr> <C-x> unite#do_action('split')
+  map <silent><buffer><expr> <C-v> unite#do_action('vsplit')
+  map <silent><buffer><expr> <C-t> unite#do_action('tabopen')
   " Close unite buffer with ESC
   nmap <buffer> <esc> <plug>(unite_exit)
   imap <buffer> <esc> <plug>(unite_exit)
