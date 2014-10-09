@@ -1,6 +1,5 @@
 " Make it beautiful - colors and fonts
-set background=dark
-colorscheme solarized
+colorscheme molokai
 
 if has("gui_running")
   "tell the term has 256 colors
