@@ -16,10 +16,6 @@ nnoremap <leader>fr :<C-u>Unite -no-split -buffer-name=mru  -start-insert file_m
 nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank history/yank<cr>
 nnoremap <leader>e :<C-u>Unite -no-split -quick-match -buffer-name=buffer buffer<cr>
 nnoremap <leader>/ :<C-u>Unite -buffer-name=grep  grep:.<cr>
-nnoremap <leader>ff :<C-u>Unite file_rec/async -no-split -start-insert<cr>
-nnoremap <leader>ft :<C-u>Unite file_rec/async -default-action=tabopen -start-insert<cr>
-nnoremap <leader>fs :<C-u>Unite file_rec/async -default-action=split -start-insert<cr>
-nnoremap <leader>fv :<C-u>Unite file_rec/async -default-action=vsplit -start-insert<cr>
 nnoremap <leader>fl :<C-u>UniteResume<cr>
 
 " Custom mappings for the unite buffer
