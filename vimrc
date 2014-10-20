@@ -90,6 +90,7 @@ set sidescrolloff=15
 set sidescroll=1
 
 au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.txt set filetype=markdown
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " Indent rules for python files
@@ -104,3 +105,4 @@ let g:gist_clip_command = 'pbcopy'
 
 " Enable matchit.vim (comes with vim these days)
 runtime macros/matchit.vim
+set rtp+=/usr/local/Cellar/fzf/0.8.7
