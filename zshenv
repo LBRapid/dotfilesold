@@ -1,0 +1,1 @@
+/Users/jdyer/dotfiles/zshenv
