@@ -78,3 +78,9 @@ nnoremap <leader>md :silent !open -a Marked.app '%:p'<cr>
 
 " Compile and run current buffer
 map <F7> :w <CR> :!gcc % -o %< && ./%< <CR>
+
+" Open new tabs
+nnoremap <leader>t :tabnew<cr>
+
+" switch to alternate file
+nnoremap <leader><leader> <c-^>

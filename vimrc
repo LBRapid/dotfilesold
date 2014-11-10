@@ -100,9 +100,6 @@ au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 set listchars=tab:>-,trail:·
 nmap <silent> <leader>s :set nolist!<CR>
 
-" Copy gist link to clipboard
-let g:gist_clip_command = 'pbcopy'
-
 " Enable matchit.vim (comes with vim these days)
 runtime macros/matchit.vim
 set rtp+=/usr/local/Cellar/fzf/0.8.7
