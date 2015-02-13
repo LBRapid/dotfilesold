@@ -17,3 +17,6 @@ unsetopt CORRECT
 
 eval "$(rbenv init - zsh)"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# zsh-bd
+. $HOME/.zsh/plugins/bd/bd.zsh
