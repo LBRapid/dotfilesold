@@ -102,4 +102,4 @@ nmap <silent> <leader>s :set nolist!<CR>
 
 " Enable matchit.vim (comes with vim these days)
 runtime macros/matchit.vim
-set rtp+=/usr/local/Cellar/fzf/0.9.2
+set rtp+=/usr/local/Cellar/fzf/0.9.3
