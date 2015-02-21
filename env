@@ -24,3 +24,5 @@ export ENDPOINT_KEY=6a204bd89f3c8348afd5c77c717a097a
 export HISTSIZE=1000
 export HISTFILE=$HOME/.history
 export SAVEHIST=$HISTSIZE
+
+export GOPATH=$HOME/go
