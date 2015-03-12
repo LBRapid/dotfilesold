@@ -50,7 +50,7 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'wellle/targets.vim'
 Bundle 'mtth/scratch.vim'
 Bundle 'gcmt/wildfire.vim'
-Bundle 'Blackrush/vim-gocode'
+Bundle 'itspriddle/vim-marked'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'
