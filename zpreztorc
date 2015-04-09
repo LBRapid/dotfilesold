@@ -37,7 +37,8 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'syntax-highlighting' \
   'git' \
-  'history-substring-search'
+  'history-substring-search' \
+  'bundler'
 
 #
 # Editor
