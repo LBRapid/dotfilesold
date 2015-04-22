@@ -9,7 +9,7 @@ export PAGER='less'
 export CLICOLOR=1
 export NODE_PATH='/usr/local/lib/node_modules'
 export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
-export LESS='-i-P%f (%i/%m) Line %lt/%L'
+export LESS='-eirMX'
 
 export CFLAGS='-O3'
 export CXXFLAGS=$CFLAGS

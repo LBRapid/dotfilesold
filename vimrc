@@ -23,6 +23,7 @@ set textwidth=79                         " Max line length is 80 columns
 set wrap
 set linebreak
 set formatoptions+=w
+set formatoptions-=t
 set ignorecase
 set infercase
 
