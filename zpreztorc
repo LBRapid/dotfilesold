@@ -38,7 +38,8 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'git' \
   'history-substring-search' \
-  'homebrew'
+  'homebrew' \
+  'bundler'
 
 #
 # Editor
