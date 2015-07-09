@@ -13,4 +13,6 @@
   nnoremap <leader>aa :AgAdd<space>
   " Search help files and add results to location-list window
   nnoremap <leader>ah :AgHelp!<space>
+  " Search word under cursor
+  nnoremap <leader>aw :Ag! "<cword>" <CR>
 " }}}
