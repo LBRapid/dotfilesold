@@ -51,10 +51,11 @@ Bundle 'wellle/targets.vim'
 Bundle 'mtth/scratch.vim'
 Bundle 'gcmt/wildfire.vim'
 Bundle 'itspriddle/vim-marked'
+Bundle 'christoomey/vim-system-copy'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'
-Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/unite.vim'
 
 "Filetype plugin indent on is required by vundle

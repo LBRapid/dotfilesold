@@ -51,18 +51,14 @@ map  <Del>   :bd<CR>
 " -----------------------------------------------------------
 "
 
-" Commentary mappings
-nnoremap <leader>k \\\
-
 " Make the dot key functional in visual mode
 vnoremap . :norm.<CR>
 
 " xmpfilter Gvim
-nmap <buffer> <leader>r <Plug>(xmpfilter-run)
-xmap <buffer> <leader>r <Plug>(xmpfilter-run)
-
-nmap <buffer> <leader>m <Plug>(xmpfilter-mark)
-xmap <buffer> <leader>m <Plug>(xmpfilter-mark)
+" nmap <buffer> <leader>r <Plug>(xmpfilter-run)
+" xmap <buffer> <leader>r <Plug>(xmpfilter-run)
+" nmap <buffer> <leader>m <Plug>(xmpfilter-mark)
+" xmap <buffer> <leader>m <Plug>(xmpfilter-mark)
 
 " Map clipboard paste to ,v
 nmap ,v "*p
@@ -81,3 +77,6 @@ nnoremap <leader>t :tabnew<cr>
 
 " switch to alternate file
 nnoremap <leader><leader> <c-^>
+
+" Toggle relative line numbering
+nnoremap <leader>r :set relativenumber!<CR>
