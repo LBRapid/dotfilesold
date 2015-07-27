@@ -1,7 +1,7 @@
 export MY_NAME='John Dyer'
-export MY_EMAIL='jdyer@spreecommerce.com'
-export MY_GITHUB_LOGIN='lbrapid'
-export MY_ORG='Spree Commerce'
+export MY_EMAIL='lbrapid@gmail.com'
+export MY_GITHUB_LOGIN='LBRapid'
+export MY_ORG='CustomInk'
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
 export EDITOR='vim'
