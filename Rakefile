@@ -13,7 +13,7 @@ def run(cmd)
   system cmd
 end
 
-task :default => :install
+task :default => :dotfiles
 
 desc "Symlinks all my dotfiles"
 task :dotfiles do
