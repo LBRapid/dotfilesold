@@ -8,6 +8,7 @@ let g:neocomplete#enable_underbar_case = 1
 let g:neocomplete#max_list = 15
 let g:neocomplete#force_overwrite_completefunc = 1
 let g:neocomplete#min_keyword_length = 4
+let g:neocomplete#auto_completion_start_length = 4
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
