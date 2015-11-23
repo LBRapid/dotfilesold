@@ -5,11 +5,11 @@
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
@@ -58,5 +58,6 @@ Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/unite.vim'
 
+call vundle#end()
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
