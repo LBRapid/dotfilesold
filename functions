@@ -53,5 +53,5 @@ rfe_staging () {
   HOSTS=$1.staging.customink.com BRANCH=$2 bx cap apps:rails_frontend:staging deploy
 }
 site_content_staging () {
-  SERVERS=$1.staging.customink.com BRANCH=$2 bx cap apps:rails_frontend:staging deploy
+  SERVERS=$1.staging.customink.com BRANCH=$2 bx cap apps:site_content:staging deploy
 }
