@@ -87,12 +87,8 @@ set scrolloff=5                   " Start scrolling when we're 5 lines away from
 set sidescrolloff=15
 set sidescroll=1
 
-au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.txt set filetype=markdown
 au BufRead,BufNewFile *.scss set filetype=scss
-
-" Indent rules for python files
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " Show trailing spaces
 set listchars=tab:>-,trail:·
