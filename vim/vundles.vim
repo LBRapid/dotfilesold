@@ -4,7 +4,7 @@
 " Filetype off is required by vundle
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -57,6 +57,8 @@ Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/unite.vim'
+
+Bundle 'file:////Users/jdyer/dev/tutorials/viml/mpc'
 
 call vundle#end()
 "Filetype plugin indent on is required by vundle

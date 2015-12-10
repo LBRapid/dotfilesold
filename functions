@@ -48,6 +48,16 @@ fshow() {
   done
 }
 
+# open argument in dash
+function dash() {
+  open "dash://$*"
+}
+
+# open man page in dash
+function dman() {
+  open "dash://manpages:$*"
+}
+
 # CustomInk
 rfe_staging () {
   HOSTS=$1.staging.customink.com BRANCH=$2 bx cap apps:rails_frontend:staging deploy
