@@ -66,8 +66,11 @@ nmap ,v "*p
 " ,s to Save
 nnoremap ,s :w<cr>
 
+" Build Ctags
+nnoremap <leader>5 :!ctags -R<CR>
+
 " Toggle tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <leader>6 :TagbarToggle<CR>
 
 " Compile and run current buffer
 map <F7> :w <CR> :!gcc % -o %< && ./%< <CR>
