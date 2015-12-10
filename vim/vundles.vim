@@ -58,8 +58,6 @@ Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/unite.vim'
 
-Bundle 'file:////Users/jdyer/dev/tutorials/viml/mpc'
-
 call vundle#end()
 "Filetype plugin indent on is required by vundle
 filetype plugin indent on
