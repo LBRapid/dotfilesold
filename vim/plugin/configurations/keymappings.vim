@@ -41,11 +41,11 @@ vmap <d-]> >gv
 " nnoremap <C-l> <C-w>l
 
 " Use cursor keys to navigate buffers.
-map  <Right> :bnext<CR>
-map  <Left>  :bprev<CR>
+nmap  <Right> :bnext<CR>
+nmap  <Left>  :bprev<CR>
 imap <Right> <ESC>:bnext<CR>
 imap <Left>  <ESC>:bprev<CR>
-map  <Del>   :bd<CR>
+nmap  <Del>   :bd<CR>
 " -----------------------------------------------------------
 "  MISC SETTINGS
 " -----------------------------------------------------------
@@ -61,19 +61,19 @@ vnoremap . :norm.<CR>
 " xmap <buffer> <leader>m <Plug>(xmpfilter-mark)
 
 " Map clipboard paste to ,v
-nmap ,v "*p
+nnoremap ,v "*p
 
 " ,s to Save
 nnoremap ,s :w<cr>
 
 " Build Ctags
-nnoremap <leader>5 :!ctags -R<CR>
+nnoremap <leader>5 :!./.git/hooks/ctags<CR>
 
 " Toggle tagbar
-nmap <leader>6 :TagbarToggle<CR>
+nnoremap <leader>6 :TagbarToggle<CR>
 
 " Compile and run current buffer
-map <F7> :w <CR> :!gcc % -o %< && ./%< <CR>
+nnoremap <F7> :w <CR> :!gcc % -o %< && ./%< <CR>
 
 " Open new tabs
 nnoremap <leader>t :tabnew<cr>
