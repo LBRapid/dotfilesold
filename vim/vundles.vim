@@ -52,6 +52,7 @@ Bundle 'mtth/scratch.vim'
 Bundle 'gcmt/wildfire.vim'
 Bundle 'itspriddle/vim-marked'
 Bundle 'christoomey/vim-system-copy'
+Bundle 'airblade/vim-gitgutter'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'
