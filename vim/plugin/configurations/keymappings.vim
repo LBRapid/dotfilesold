@@ -75,9 +75,6 @@ nnoremap <leader>6 :TagbarToggle<CR>
 " Compile and run current buffer
 nnoremap <F7> :w <CR> :!gcc % -o %< && ./%< <CR>
 
-" Open new tabs
-nnoremap <leader>t :tabnew<cr>
-
 " switch to alternate file
 nnoremap <leader><leader> <c-^>
 
