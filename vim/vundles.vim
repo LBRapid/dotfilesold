@@ -54,11 +54,11 @@ Bundle 'itspriddle/vim-marked'
 Bundle 'christoomey/vim-system-copy'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'junegunn/fzf.vim'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'
 Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/unite.vim'
 
 call vundle#end()
 "Filetype plugin indent on is required by vundle
