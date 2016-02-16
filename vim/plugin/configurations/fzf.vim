@@ -1,16 +1,11 @@
 nnoremap <C-p> :FZF<cr>
 
-" Open files in horizontal split
-nnoremap <silent> <Leader>fs :call fzf#run({
-\   'tmux_height': '40%',
-\   'sink':        'botright split' })<CR>
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
-" Open files in vertical horizontal split
-nnoremap <silent> <Leader>fv :call fzf#run({
-\   'tmux_width': winwidth('.') / 2,
-\   'sink':       'vertical botright split' })<CR>
+let g:fzf_layout = { 'down': '~40%' }
 
-" Open files in new tab
-nnoremap <silent> <Leader>ft :call fzf#run({
-\   'tmux_height': '40%',
-\   'sink':        'tabe' })<CR>
+" For Commits and BCommits to customize the options used by 'git log':
+let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
