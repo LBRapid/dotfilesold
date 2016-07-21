@@ -37,3 +37,4 @@ Thumbs.db
 ################
 .ruby-version
 .powder
+config/remote_services.yml
