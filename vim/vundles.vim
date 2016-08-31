@@ -59,7 +59,7 @@ Bundle 'junegunn/fzf.vim'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'
-Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/deoplete.nvim'
 
 call vundle#end()
 "Filetype plugin indent on is required by vundle
