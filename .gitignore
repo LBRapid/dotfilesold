@@ -6,3 +6,5 @@ vim/bundle/*
 vim/backups
 !vim/bundle/vundle
 .DS_STORE
+functions_private
+env_private
