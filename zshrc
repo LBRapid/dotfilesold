@@ -8,12 +8,20 @@ if [ -f ~/.env ]; then
   . ~/.env
 fi
 
+if [ -f ~/.env_private ]; then
+  . ~/.env_private
+fi
+
 if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
 if [ -f ~/.functions ]; then
   . ~/.functions
+fi
+
+if [ -f ~/.functions_private ]; then
+  . ~/.functions_private
 fi
 
 # Disable corrections
