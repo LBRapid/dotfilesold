@@ -57,6 +57,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'junegunn/fzf.vim'
 Bundle 'sjl/badwolf'
+Bundle 'mxw/vim-jsx'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/neomru.vim'

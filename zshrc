@@ -34,3 +34,6 @@ eval "$(hub alias -s)"
 
 # zsh-bd
 . $HOME/.zsh/plugins/bd/bd.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
