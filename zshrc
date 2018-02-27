@@ -35,5 +35,9 @@ eval "$(hub alias -s)"
 # zsh-bd
 . $HOME/.zsh/plugins/bd/bd.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+STRAP_BIN_DIR=~/Users/jdyer/workspace/strap/bin
+if [ -d $STRAP_BIN_DIR ]; then
+  PATH="$STRAP_BIN_DIR:${PATH}"
+fi
+
+eval "$(nodenv init -)"
