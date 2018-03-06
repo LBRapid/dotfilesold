@@ -60,12 +60,6 @@ vnoremap . :norm.<CR>
 " nmap <buffer> <leader>m <Plug>(xmpfilter-mark)
 " xmap <buffer> <leader>m <Plug>(xmpfilter-mark)
 
-" Map clipboard paste to ,v
-nnoremap ,v "*p
-
-" ,s to Save
-nnoremap ,s :w<cr>
-
 " Build Ctags
 nnoremap <leader>5 :!./.git/hooks/ctags<CR>
 
