@@ -57,3 +57,7 @@ function dash() {
 function dman() {
   open "dash://manpages:$*"
 }
+
+function ci_log_cleanup() {
+  find ~/workspace/customink -name '*.log' -print0 | xargs -0 -t rm
+}
