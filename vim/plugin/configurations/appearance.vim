@@ -1,8 +1,9 @@
 " Make it beautiful - colors and fonts
-colorscheme badwolf
-let g:badwolf_darkgutter = 1
-let g:badwolf_css_props_highlight = 1
-let g:badwolf_tabline = 1
+set background=dark
+colorscheme onedark
+" let g:badwolf_darkgutter = 1
+" let g:badwolf_css_props_highlight = 1
+" let g:badwolf_tabline = 1
 
 if has("gui_running")
   "tell the term has 256 colors

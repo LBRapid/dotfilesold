@@ -10,8 +10,8 @@ alias .a="$EDITOR ~/.aliases && source ~/.aliases"
 alias .e="$EDITOR ~/.env && source ~/.env"
 alias reload="source ~/.aliases && source ~/.env"
 alias lip="lorem $* | pbcopy"
-alias vi='nvim'
-alias vim='nvim'
+alias vi='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
+alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 alias rmf='rm -rf'
 alias lsa='ls -a'
 alias cbp='pbpaste | less'
